@@ -1,0 +1,266 @@
+@charset "UTF-8";
+body {
+  margin: 1.5em;
+  /*الحواف كلها تبعد المسافة دي*/
+  background: #e0f5ec;
+  font-family: 'Saira Condensed', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.main-image {
+  width: 80%;
+  margin-top: 2em;
+  margin-left: 2.5em;
+}
+
+.logo {
+  color: #292106;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 2rem;
+}
+
+nav {
+  position: fixed;
+  /* دا لتثبيت الموقع على الشاشة مش هيتحرك خالص عكسها unset*/
+  right: 0;
+  top: 0;
+  background: #b9b9b3;
+  /* لون الخليفية بتاعت المكب دا بس*/
+  height: 100%;
+  width: 40%;
+  /*النسب المؤويه بنستخدمها  علشان تحدد هيغطي قد ايه من الصفحه*/
+  z-index: 100;
+  /*البعد في المحور زي يعني يخليه فوق كل حاجه*/
+  text-transform: uppercase;
+  /*كل حاجه كابيتال ويمكن العكس وحجات تانيه كتير*/
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5 ease-in-out;
+  transition: -webkit-transform 0.5 ease-in-out;
+  transition: transform 0.5 ease-in-out;
+  transition: transform 0.5 ease-in-out, -webkit-transform 0.5 ease-in-out;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+nav ul a {
+  color: #2b2b99;
+  padding: 0.4em 0.5em;
+  display: block;
+}
+
+nav ul a:hover {
+  background: antiquewhite;
+}
+
+nav img {
+  height: 2em;
+  width: 2em;
+  right: 100;
+  top: 5;
+  float: right;
+  margin: 1em;
+  cursor: pointer;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .menu-img {
+  width: 3em;
+  height: 3em;
+  margin-top: -1em;
+  /*ميرجن هيه الي بتحدد بعد البتاع عن الحواف الاربعه */
+  cursor: pointer;
+  /*يعني ممكن تداس بالوامس*/
+}
+
+section.introduction {
+  font-size: 1.6rem;
+  height: 45vh;
+  /*يعني المسافة  بين الفقرة دي والي بعديها*/
+  margin-top: 2em;
+}
+
+section.introduction img {
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: 'Mouse Memoirs', sans-serif;
+  color: black;
+  font-weight: 400;
+}
+
+.sub-title {
+  color: brown;
+  line-height: 2rem;
+  margin-top: -1em;
+}
+
+.more-info img {
+  width: 100%;
+}
+
+.more-info .title2 {
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  height: 4vh;
+}
+
+.more-info .description {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.Roadmap .title {
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-weight: 400;
+}
+
+.Roadmap .title2 {
+  font-size: 1.8rem;
+  height: 3vh;
+}
+
+.Roadmap .description {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.NFT .title {
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-weight: 400;
+}
+
+.NFT img {
+  width: 12em;
+}
+
+.bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.bottom .socials a {
+  font-size: 1.6rem;
+  display: block;
+  padding: 0.2em 1em;
+  background-color: aquamarine;
+}
+
+.bottom .socials a:hover {
+  background: antiquewhite;
+}
+
+.bottom .info a {
+  font-size: 1.1rem;
+  padding: 0.2em 0.5em;
+}
+
+.bottom .info a:hover {
+  text-decoration: underline;
+}
+
+.bottom img {
+  width: 6em;
+  margin-left: 10em;
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    /*الحواف كلها تبعد المسافة دي*/
+    font-family: 'Saira Condensed', sans-serif;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .menu-img {
+    display: none;
+  }
+  .closeBotton {
+    display: none;
+  }
+  nav {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    position: unset;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    font-size: 1.8rem;
+    color: black;
+    padding: 0.3em 0.7em;
+    font-family: 'Mouse Memoirs', sans-serif;
+    margin-top: -0.6em;
+  }
+  .main-image {
+    width: 50%;
+  }
+  section.introduction {
+    height: 50vh;
+    /*يعني المسافة  بين الفقرة دي والي بعديها*/
+  }
+  section.introduction img {
+    width: 80%;
+  }
+  .more-info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-bottom: 8em;
+  }
+  .more-info img {
+    width: 25em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .more-info {
+    gap: 0;
+  }
+  section.introduction {
+    height: 20vh;
+    /*يعني المسافة  بين الفقرة دي والي بعديها*/
+  }
+  section.introduction .shit {
+    display: none;
+  }
+  .main-image {
+    margin-left: 25%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
