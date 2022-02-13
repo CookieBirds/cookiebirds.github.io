@@ -144,31 +144,44 @@ section.introduction img {
   line-height: 1.8rem;
 }
 
-.NFT .title {
-  font-family: 'Mouse Memoirs', sans-serif;
-  font-weight: 400;
+.NFT {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*.title{
+        justify-content:left;
+        font-family: 'Mouse Memoirs', sans-serif;
+        font-weight: 400;
+    }*/
 }
 
 .NFT img {
-  width: 12em;
+  height: 10em;
+  width: auto;
+  margin: 0.5em;
 }
 
 .bottom ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style-type: none;
 }
 
-.bottom .socials a {
-  font-size: 1.6rem;
-  display: block;
-  padding: 0.2em 1em;
-  background-color: aquamarine;
+.bottom .socials img {
+  height: 1.6em;
+  width: auto;
+  margin: 0;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
-.bottom .socials a:hover {
-  background: antiquewhite;
+.bottom .socials img:hover {
+  height: 1.9em;
 }
 
 .bottom .info a {
@@ -180,20 +193,36 @@ section.introduction img {
   text-decoration: underline;
 }
 
-.bottom img {
-  width: 6em;
-  margin-left: 10em;
+.bottom .logo {
+  width: 3em;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (min-width: 680px) {
   body {
     margin: 1.5em 5em;
     /*الحواف كلها تبعد المسافة دي*/
-    font-family: 'Saira Condensed', sans-serif;
+  }
+  section.introduction {
+    height: 20vh;
+    /*يعني المسافة  بين الفقرة دي والي بعديها*/
+  }
+  section.introduction img {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 920px) {
+  body {
+    margin: 1.5em 8em;
+    /*الحواف كلها تبعد المسافة دي*/
+  }
   .menu-img {
     display: none;
   }
@@ -221,15 +250,23 @@ section.introduction img {
     font-family: 'Mouse Memoirs', sans-serif;
     margin-top: -0.6em;
   }
-  .main-image {
-    width: 50%;
+  .mainImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainImage .main-image {
+    width: 60%;
   }
   section.introduction {
-    height: 50vh;
+    height: 20vh;
     /*يعني المسافة  بين الفقرة دي والي بعديها*/
-  }
-  section.introduction img {
-    width: 80%;
+    /*img{
+        width: 80%;
+        }*/
   }
   .more-info {
     display: -ms-grid;
@@ -237,10 +274,18 @@ section.introduction img {
     -ms-grid-columns: (auto)[2];
         grid-template-columns: repeat(2, auto);
     gap: 3em;
-    margin-bottom: 8em;
+    margin-bottom: 1em;
   }
   .more-info img {
     width: 25em;
+  }
+  .NFT {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -248,6 +293,9 @@ section.introduction img {
   .wrapper {
     width: 1200px;
     margin: 0 auto;
+  }
+  .main-image {
+    margin-top: 5.5em;
   }
   .more-info {
     gap: 0;
@@ -259,8 +307,13 @@ section.introduction img {
   section.introduction .shit {
     display: none;
   }
-  .main-image {
-    margin-left: 25%;
+  .NFT {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

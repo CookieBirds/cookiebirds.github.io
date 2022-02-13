@@ -144,36 +144,55 @@ section.introduction{
     }
 }
 .NFT{
+    //display: flex;
+    //display: flex;
+    display: block;
+    justify-content: center;
 
-    .title{
+    /*.title{
+        justify-content:left;
         font-family: 'Mouse Memoirs', sans-serif;
         font-weight: 400;
-    }
+    }*/
     img{
-        width: 12em;
+        
+        height: 10em;
+        width: auto;
+        margin: 0.5em;
         
     }
 
 }
 .bottom{
+    
     ul{
         display: flex;
+        justify-content: center;
         list-style-type: none;
         //padding: 0;
         
     }
 
     .socials{
-        a{
+
+        img{
+            height: 1.6em;
+            width: auto;
+            margin : 0;
+            margin-left: 1em;
+            margin-right: 1em;
             
-            font-size: 1.6rem;
-            display: block;
-            padding: 0.2em 1em;
-            background-color: aquamarine;
             &:hover{       // لما تحط الماوس عليها يحصل الي تحت دا 
-                background: antiquewhite;
+                height: 1.9em;
             }
+            //display: flex;
+            //justify-content: center;
+
+
+            //display: block;
+            //padding: 0.2em 1em;
         }
+       
     }
     .info{
         a{
@@ -187,26 +206,38 @@ section.introduction{
         }
     }
 
-    img{
-        width: 6em;
-        margin-left: 10em;
+
+    .logo{
+        width: 3em;
+        //margin-left: 10em;
+        margin: auto;
+        display: flex;
+        justify-content: center;
     }
-    
     
 }
 
 //........................screen sizs ............................................
-
-@media only screen and(min-width: 680px){
+// .............. size 1..........
+@media only screen and(min-width: 680px){ //زقه شمال
 
     body{ 
         margin: 1.5em 5em;              /*الحواف كلها تبعد المسافة دي*/
-        //background: rgb(17, 134, 83);
-        font-family: 'Saira Condensed', sans-serif;
+    }
+    section.introduction{  
+        height: 20vh;    /*يعني المسافة  بين الفقرة دي والي بعديها*/
+
+        img{
+        //width: 80%;
+        display: none;
+        }
     }
 }
-
-@media only screen and(min-width: 920px){ // for desktop
+//.............. size 2...........
+@media only screen and(min-width: 920px){ // for small desktop
+    body{ 
+        margin: 1.5em 8em;              /*الحواف كلها تبعد المسافة دي*/
+    }
 
     .menu-img{
         display: none;
@@ -236,28 +267,35 @@ section.introduction{
             }
         }
     }
-   
-    .main-image{
-        width: 50%;
-        //width: 1200px;
-        //margin: 0 auto;
-       // position: unset;
+    .mainImage{
+
+        display: flex;             // اكتب دي والي تحتيها علشان تخلي اي حاجه في النص على طول 
+        justify-content: center;
+
+        .main-image{
+            width: 60%;
+            //width: 1200px;
+            //margin: 0 auto;
+           // position: unset;
+        }
+        
     }
+    
     section.introduction{
         
-        height: 50vh;    /*يعني المسافة  بين الفقرة دي والي بعديها*/
+        height: 20vh;    /*يعني المسافة  بين الفقرة دي والي بعديها*/
         //margin-top: 2em;
     
-    img{
+        /*img{
         width: 80%;
-    }
+        }*/
     }
 
     .more-info{
         display: grid;                       // يحولها لشبكه
         grid-template-columns: repeat(2,auto) ;  // يقسمهم 
         gap: 3em;                                // المسافه بين الاثنين في نفس الصف
-        margin-bottom: 8em;
+        margin-bottom: 1em;
 
         img{
             width: 25em;
@@ -265,12 +303,21 @@ section.introduction{
         
 
     }
+    .NFT{
+        display: flex;             // اكتب دي والي تحتيها علشان تخلي اي حاجه في النص على طول 
+        justify-content: center;   // بس لازم تتكتب في الديف نفسه مش جوه اي حاجه تانيه
+    }
 }
-@media only screen and(min-width: 1200px){
+//.................. size 3.................
+@media only screen and(min-width: 1200px){ // for PC the main shit
 
     .wrapper{
         width: 1200px;
         margin: 0 auto;
+    }
+    .main-image{
+       margin-top: 5.5em;
+       
     }
 
     .more-info{
@@ -287,13 +334,10 @@ section.introduction{
     
     }
 
-    .main-image{
-        //width: 80%;
-        //margin-top: 2em;
-        margin-left: 25%;
-        
-          
-        //position: absolute;
+    
+    .NFT{
+        display: flex;             // اكتب دي والي تحتيها علشان تخلي اي حاجه في النص على طول 
+        justify-content: center;   // بس لازم تتكتب في الديف نفسه مش جوه اي حاجه تانيه
     }
     
 
