@@ -15,7 +15,7 @@ body{
 
     
 
-    background-image: url("../images/1233.png");
+    background-image: url("../images/1234.jpg");
     background-position: top;
     background-repeat: no-repeat;
 
@@ -372,7 +372,7 @@ a{
     }
 
     img{
-        width: 100px;
+        width: 55px;
     }
 }
 
@@ -383,9 +383,8 @@ a{
     color: rgb(255, 255, 255);
     font-size: 2.3rem;
     margin-bottom: 0.3em;
-    margin-top: 50px;
+    margin-top: 45px;
     text-shadow: 2px 2px 3px #2b1a1a;
-
 }
 .subtitle{
     font-size: 2rem;
@@ -430,10 +429,15 @@ a{
 .microtext{
     font-size: 1.1rem;
     font-family: Saira Condensed;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     padding-left: 5px;
-
-
+}
+.microtext2{
+    font-size: 1rem;
+    font-family: Saira Condensed;
+    
+    margin-bottom: 0.5px;
+    padding-left: 5px;
 }
 
 .spaceS{
